@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersActivity">
+
+    <include
+        android:id="@+id/all_users_app_bar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_below="@+id/all_users_app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="0dp"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="79dp"
+        android:text="Search for people and friends from school, college and university"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/search_people_button"
+        android:background="@drawable/search_text_background"
+        android:ems="10"
+        android:hint="Search here..."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textColorHint="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/search_people_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/search_text_background"
+        android:padding="20dp"
+        app:srcCompat="@drawable/ic_search" />
+
+
+</RelativeLayout>
